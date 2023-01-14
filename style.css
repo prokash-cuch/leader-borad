@@ -1,0 +1,194 @@
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* font style oppince */
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #d8d4fc;
+}
+/* top players area style */
+header{
+    width: 928px;
+    height: 80px;
+    padding: 4px 4px 4px 4px;
+    margin: auto;
+    background: #562EFF;
+}
+.head-container{
+    width: 870px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40.42px;
+    height: 51px;
+}
+.logo h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 8px;
+    color: #ffff;
+}
+.head-manu{
+    display: flex;
+    align-items: center;
+}
+.head-manu a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: #ffff;
+    font-size: 16px;
+}
+.head-manu img{
+    width: 51px;
+    height: 51px;
+}
+main{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 870px;
+    height: 679px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+    background: white;
+}
+.section-title{
+    font-size: 24px;
+    font-weight: 500;
+    color:#562EFF;
+    line-height: 40px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 16px;
+}
+hr{
+    width: 807px;
+    height: 0;
+    margin-left: 2px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+    border: 1px solid darkgray;
+}
+/* Blog Part utilitise */
+.blogs{
+    display: grid;
+    grid-gap: 26px;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+}
+.blog{
+    display: flex;
+}
+.blog-thumail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    width: 197px;
+    height: 68px;
+    margin-left: 20px;
+}
+.write-pera{
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.blog-athore{
+    font-size: 16px;
+    color:#9F9F9F;
+}
+.blog-athore a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #562EFF;
+}
+
+/*  */
+.container2{
+    height: 362px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.course{
+    Width: 236px;
+    Height :269px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 8px;
+    background: #f6ededa3;
+}
+.course-thamail img{
+    Width: 235px ;
+    Height: 104px ;
+}
+.course-info{
+    width: 194px;
+    height: 100px;
+}
+.course-dital{
+   width: 220px;
+   font-size: 20px;
+   font-weight: 400;
+   margin-top: 18px;
+}
+.course-star{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.course-info p{
+    font-Weight: 400 ;
+    Size : 14.69px ;
+    color: #ED6B4F;
+}
+.fill-star{
+    margin-right: 2px;
+    color: gold;
+}
+.event-star{
+    color:#AEAEAE;
+    opacity: 0.25;
+}
+.course-star span{
+    color: #AEAEAE;
+    margin-left: 2px;
+}
+.clock{
+    width: 78px;
+    padding: 2px;
+    color: #FF4A60;
+    border-radius: 10px;
+    margin-left: 16px;
+    background: rgba(249, 206, 206, 0.923);
+}
+.fa-clock{
+    font-size: 16px;
+    color: #FF4A60;
+}
