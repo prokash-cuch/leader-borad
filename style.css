@@ -6,47 +6,47 @@ body{
     background: #d8d4fc;
 }
 /* top players area style */
-/* header{
+.head-container{
     width: 928px;
-    height: 80px;
-    padding: 4px 4px 4px 4px;
+    height: 94px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
     background: #562EFF;
 }
-.head-container{
-    width: 870px;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-}
 .logo{
-    display: flex;
-    align-items: center;
+   color: #FFF;
+   display: grid;
+   margin-left: 30px;
+   grid-template-columns: repeat(2,1fr);
+   align-items: center;
 }
 .logo img{
-    width: 40.42px;
-    height: 51px;
+   width:40px;
+   height: 51px;
 }
 .logo h2{
-    font-size: 24px;
-    font-weight: 500;
-    margin-left: 8px;
-    color: #ffff;
+   font-size: 20px;
+   font-weight: 500;
 }
 .head-manu{
     display: flex;
+    margin-right: 20px;
     align-items: center;
 }
 .head-manu a{
-    text-decoration: none;
-    margin-right: 20px;
-    color: #ffff;
     font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    align-items: center;
+    margin-right: 20px;
+    color: #FFF;
 }
 .head-manu img{
     width: 51px;
-    height: 51px;
-} */
+    height: 51px
+}
+/*----------main section--------- */
 main{    
     display: flex;
     flex-direction: column;
@@ -195,15 +195,40 @@ hr{
 /* media qurery */
 /*--------------computer divaice-----------*/
 @media only screen and (max-width:1312px) {
+    body{
+        background:#FFF;
+    }
+
+    .head-container{
+        width: 100%;
+    }
+    .logo{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .logo h2{
+        display: block;
+    }
+    .head-manu {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .head-manu a{
+        display:block;
+    }
+/* players and blog section */
     .container{
         width: 100%;
         height: 100%;
+        background: black;
     }
      .players,.blogs{
         grid-template-columns: repeat(3,1fr);
      }
      .player{
         flex-direction: column;
+    }
+    .player-name{
+        color: #FFF;
     }
     hr{
         width: 100%;
@@ -213,25 +238,54 @@ hr{
         align-items: center;
         margin-bottom: 20px;
     }
+    .write-pera{
+        color: #FFF;
+    }
+    /* Lete's courses */
     .courses{
         grid-template-columns: repeat(3,1fr);
     }
     .course{
         flex-direction: column;
         margin: auto;
+        background: #FFF;
     }
 }
 /*--------------Tablet Divices-------------*/
-@media only screen and (max-width:992px) {
+@media only screen and (max-width:992px){
+    body{
+        background:#FFF;
+    }
+    .head-container{
+        width: 100%;
+    }
+    .logo{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .logo h2{
+        display: block;
+    }
+    .head-manu {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .head-manu a{
+        display:block;
+    }
+/* players and blog section */
     .container{
         width: 100%;
         height: 100%;
+        background: black;
     }
      .players,.blogs{
         grid-template-columns: repeat(2,1fr);
      }
      .player{
         flex-direction: column;
+    }
+    .player-name{
+        color: #FFF;
     }
     hr{
         width: 100%;
@@ -241,25 +295,111 @@ hr{
         align-items: center;
         margin-bottom: 20px;
     }
+    .write-pera{
+        color: #FFF;
+    }
     .courses{
         grid-template-columns: repeat(2,1fr);
     }
     .course{
         flex-direction: column;
         margin: auto;
+        background: #FFF;
+    }
+}
+/* Ipade size */
+@media only screen and (max-width:992px){
+    body{
+        background:#FFF;
+    }
+
+    .head-container{
+        width: 100%;
+    }
+    .logo{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .logo h2{
+        display: block;
+    }
+    .head-manu {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .head-manu a{
+        display:block;
+    }
+/* players and blog section */
+    .container{
+        width: 100%;
+        height: 100%;
+        background: black;
+    }
+     .players,.blogs{
+        grid-template-columns: repeat(2,1fr);
+     }
+     .player{
+        flex-direction: column;
+    }
+    .player-name{
+        color: #FFF;
+    }
+    hr{
+        width: 100%;
+    }
+    .blog{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .write-pera{
+        color: #FFF;
+    }
+    .courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .course{
+        flex-direction: column;
+        margin: auto;
+        background: #FFF;
     }
 }
 /* mobaile divaice */
 @media only screen and (max-width:668px) {
+    body{
+        background:#FFF;
+    }
+
+    .head-container{
+        width: 100%;
+    }
+    .logo{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .logo h2{
+        display: block;
+    }
+    .head-manu {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .head-manu a{
+        display:none;
+    }
+/* players and blog section */
     .container{
         width: 100%;
         height: 100%;
+        background: black;
     }
      .players,.blogs{
         grid-template-columns: repeat(1,1fr);
      }
      .player{
         flex-direction: column;
+    }
+    .player-name{
+        color: #FFF;
     }
     hr{
         width: 100%;
@@ -269,11 +409,73 @@ hr{
         align-items: center;
         margin-bottom: 20px;
     }
+    .write-pera{
+        color: #FFF;
+    }
+    /* Lete's courses section */
     .courses{
         grid-template-columns: repeat(1,1fr);
     }
     .course{
         flex-direction: column;
         margin: auto;
+        background: #FFF;
+    }
+}
+/* Galaxy screen size */
+@media only screen and (max-width:280px){
+    body{
+        background:#FFF;
+    }
+
+    .head-container{
+        width: 100%;
+    }
+    .logo{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .logo h2{
+        display: none;
+    }
+    .head-manu {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .head-manu a{
+        display:none;
+    }
+/* players and blog section */
+    .container{
+        width: 100%;
+        height: 100%;
+        background: black;
+    }
+     .players,.blogs{
+        grid-template-columns: repeat(1,1fr);
+     }
+     .player{
+        flex-direction: column;
+    }
+    .player-name{
+        color: #FFF;
+    }
+    hr{
+        width: 100%;
+    }
+    .blog{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .write-pera{
+        color: #FFF;
+    }
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .course{
+        flex-direction: column;
+        margin: auto;
+        background: #FFF;
     }
 }
